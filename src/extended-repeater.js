@@ -1,6 +1,6 @@
 const CustomError = require("../extensions/custom-error");
 
-module.exports = function repeater(/* str, options */) {
+module.exports = function repeater( str, options ) {
   str = str + '';
   if (options['additionSeparator'] === undefined) options['additionSeparator'] = '|';
   for (let el in options) {
